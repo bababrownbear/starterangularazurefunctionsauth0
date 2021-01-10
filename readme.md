@@ -1,4 +1,4 @@
-A started Angular / .NET Core 3.1 Azure Function / Auth0 Application.
+A starter Angular / .NET Core 3.1 Azure Function / Auth0 Application.
 
 #TODO Connect to datasource.
 

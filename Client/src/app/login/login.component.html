@@ -1,0 +1,9 @@
+<ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+    <a mat-list-item (click)="auth.logout({ returnTo: document.location.origin })">
+      Log out
+    </a>
+  </ng-container>
+
+  <ng-template #loggedOut>
+    <a mat-list-item (click)="login()">Log in | Sign Up</a>
+  </ng-template>

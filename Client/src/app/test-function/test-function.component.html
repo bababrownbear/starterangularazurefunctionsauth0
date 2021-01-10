@@ -1,0 +1,7 @@
+<ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+    <a mat-list-item (click)="test()">Test Function</a>
+</ng-container>
+
+<ng-template #loggedOut>
+    <a mat-list-item>Can't Test Function</a>
+</ng-template>
